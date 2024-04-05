@@ -11,4 +11,4 @@
 ifcongig  :- ip chack 
 ping google.com
 hostname :- hostname name chack
-hostname set :- sumit hostname set 
+hostname set sumit :- sumit hostname set 
