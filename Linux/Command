@@ -1,0 +1,220 @@
+cd . current directory
+cd (enter) home directory
+ls -a hidden files and all files
+ls -l long listing files
+cd ~ user home directory
+ctrl+r  reverse search
+sudo su - root user login
+
+# File and Directory Command
+
+touch new file create
+mkdir new directory create
+rm -r directory delete 
+rm file delete
+
+#  Copy,Paste and Rename Command
+
+cp copy file 
+cp source destination
+    linux   aws
+
+cp -r cpoy directory
+cp -r source destination
+       linux   aws
+
+mv cut command
+mv source     destination
+    linux         aws
+
+mv rename command
+mv source destination
+    linux     aws
+
+
+
+# File Permission Commands
+
+cat /etc/passwd  : user information
+cat /etc/group : group information
+cat /etc/shadow : password information in encrypted form
+
+useradd new user create
+groupadd new group create
+
+userdel user delete 
+groupdel group delete
+
+
+                file                            diretory
+
+read       can read content of file     list the files and directories
+r
+write       edit the file                create/delete files
+w
+execute                                  cd 
+x
+
+Parmission Number
+read     4
+write    2 
+execute  1
+
+chown ussername directoryname
+chown   sumit     aws
+
+chgrp groupname   directoryname
+chgrp    dev        aws
+
+ls -l | grep aws
+owner   group  directorynam
+sumit    dev     aws
+
+chmod    change permission
+chmod 777 aws
+chmod rwx aws
+
+chmod o+rx aws  it will assign read and execute permission
+chmod o-rx aws  it will remove permissions 
+
+
+
+# SSH Command  secure shell
+it has public key and private key to connect to remote server
+
+cd /etc/ssh/
+ls
+vim sshd_config   # (set number at 65 line password replce no to yes)
+systemctl restart sshd
+
+
+adduser dev
+adduser qa
+
+password dev    (dev@123)
+password qa     (qa@123)
+
+su - dev   # (dev user login)
+ssh-keygen
+ssh-copy-id qa@Public IP addres  # enter password of (remote user) to once then you will be taken to remote system "qa".
+
+
+# Portnumber to login ssh key
+cd 
+cd /etc/ssh
+vim sshd_config
+
+Port number 22
+port number change 2222
+
+systemctl restart sshd
+
+ssh -i devops.pem -2222 ubuntu@Public IP 
+
+
+# Compress Command
+
+du -lsh /etc  # File/directory name
+du -lsh *     # all file/directory 
+
+
+compress
+tar -cvf etc.tar /etc         #/etc directory
+tar -czvf etc.tar.gz /etc     #/etc directory
+tar -cjvf etc.tar.bz2 /etc    #/etc directory
+tar -czJf etc.tar.xz /etc     #/etc directory
+
+Extract
+tar -xvf etc.tar
+tar -xzvf etc.tar.gz 
+tar -xjvf etc.tar.bz2 
+tar -xzJf etc.tar.xz
+
+
+# Install Command
+yum install httpd  # for use linux os
+apt install apache # for use ubuntu os
+yum remove httpd
+apt remove httpd
+
+yum update
+apt update
+
+yum repolist   # show repo
+apt repolist   # show repo
+
+
+
+# Cronjob Command
+apt install cronie
+systemctl status cronie
+
+Minute                0-59
+Hour                  0-23
+Day of Month          1-31
+Month                 1-12
+Day of Week mon-sun   0-7
+
+crontab -e   # new Create Crontab
+crontab -l   # list crontab
+crontab -r   # crontab remove 
+
+*/1 * * * *  cal > cal.txt
+
+
+# Process Command
+
+ps :- Running Process show
+ps aux| less :- totel running process
+tty :- to see the terminal
+ps -ef :- pid and ppid show
+
+pid :- Process id
+ppid :- Parent Process id
+
+r :- running process
+t :- stopped process
+z :- zombie process
+
+ctrl+z :- stop process
+ctrl+c :- kill process
+
+w :- show ssh user
+
+jobs :- running process in the background
+fg%1 :- 1 job id kill process
+
+
+
+# Disk Partitioning in Linux Command
+
+lsblk     :- show disk
+fdisk -i  :- show disk
+
+df -h :- chack partition
+
+fdisk /dev/xvdf  (path)
+
+m :- check options
+n :- add a new partition
+p :- parmary
+n :- new partition
+w :- save
+d :- delete
+q :- dont save
+
+
+partition formet command
+
+mkfs.ext4 /dev/xvdf (path)
+
+uuid check command
+blkid /dev/xvdf1 (path)
+
+uuid copy command  # mount command
+cd
+vim etc/fstab
+past
+
+umount command
+vim /etc/fatab
