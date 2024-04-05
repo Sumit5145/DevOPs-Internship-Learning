@@ -27,8 +27,8 @@ fi
 # output
 number is euqal to five
 -------------------------------------------------------------------------------------------------------------------------------------
-
-(2) #!/bin/bash
+(2) While Loop
+#!/bin/bash
 read -p "please enter a number " number
 initNumber=1
 while [[ ${initNumber} -le 10 ]]
