@@ -66,3 +66,52 @@ create
 
 URL :- 
 -------------------------------------------------------------------------------------------------------------------------------------
+
+# Auto Scaling group
+
+Create Load balancer
+Create Launch Template
+
+Launch template name :- dev
+Application and OS Images :- ubuntu
+Key pair :- sumit
+security group :- AWS
+Configure storage :- 8 GB GP2
+
+Create Auto Scaling group
+
+Auto Scaling group name :- dev
+Select existing Launch template :- dev
+Availability Zones and subnets :- ap-south-1a (aps1-az1)
+                                  ap-south-1b (aps1-az3)
+                                  ap-south-1c (aps1-az2)
+Attach to an existing load balancer :- Attach to an existing load balancer :- MY-LB
+Configure group size and scaling :- Desired capacity :- 2
+                                    Min desired capacity :- 1
+                                    Max desired capacity :- 3
+No scaling policies
+
+CREATE AUTO SCALING GROUP
+
+
+Create Alarm using Cloudwatch Service
+Metrics--allmetrics--ec2--by autoscaling group
+select CPU Utilization--go to graphed metrics
+now create alarm
+select only 2 option :- >25& Notification
+
+< 25 Select Topic
+
+>25% increase -HighCPU
+>10% decrease -LowCPU
+
+Create scaling policy (go to autoscaling group)
+
+autoscaling group--automatic scaling--create dynamic scaling policy
+
+select simple scaling
+
+URL :-
+-------------------------------------------------------------------------------------------------------------------------------------
+
+ 
