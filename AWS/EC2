@@ -1,0 +1,68 @@
+# Security Groups
+
+Security group name :- devops
+Inbound rules 
+Type       Port range              Source
+SSH           22                Anywhere 0.0.0.0/0
+HTTP          80                Anywhere 0.0.0.0/0
+
+Outbound rules 
+Type          Port range                  Source
+All traffic      all                   Custom 0.0.0.0/0
+
+SAVE
+
+URL :- 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+# Create key pair
+
+Key pair name :- sumit
+Key pair type :- RSA
+Private key file format :- Pem
+Create key pair
+
+URL :- 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+# Volume 
+
+Volume type :- GP3 SSD
+Size (GiB) :- 10
+Create Volume
+
+URL :- 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+# Load balancer
+
+Load balancer type :- Classic Load Balancer 
+Load balancer name :- my-lb
+Scheme :- Internet-facing
+Mappings :- ap-south-1a (aps1-az1)
+            ap-south-1b (aps1-az3)
+            ap-south-1c (aps1-az2)
+Security groups :- devops
+Listeners and routing   :- Listener protocol    Listener port
+                                HTTP                80
+Health checks :- Response timeout 5 seconds
+                 Interval 10 seconds
+                 Unhealthy threshold 2
+                 Healthy threshold 5
+Create load balancer
+
+URL :- 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+# Launch an instance
+
+Name :- dev
+Application and OS Images :- ubuntu
+Instance type :- t2 micro
+Key pair :- sumit
+Select existing security group :- devops
+Configure storage :- 8 GB GP2
+create
+
+URL :- 
+-------------------------------------------------------------------------------------------------------------------------------------
