@@ -1,0 +1,65 @@
+#/bin/bash  Shebang
+
+
+# Command                        Description
+   $0                             argument 0
+   $1                             First argument
+  -eq                             equality check
+  -ne                             inequality check
+  -it                             less than
+  -le                             less than or equal
+  -gt                             greater than
+  -ge                             greater than or equal
+
+-------------------------------------------------------------------------------------------------------------------------------------
+(1) IF Loop
+
+#!/bin/bash
+
+number=5
+
+if test $number -eq 5    # condition
+then
+  echo "number is euqal to five"
+fi
+
+
+# output
+number is euqal to five
+-------------------------------------------------------------------------------------------------------------------------------------
+
+(2) #!/bin/bash
+read -p "please enter a number " number
+initNumber=1
+while [[ ${initNumber} -le 10 ]]
+do
+    echo $((initNumber*number))
+    ((initNumber++))
+done
+
+# output
+2
+4
+6
+8
+10
+-------------------------------------------------------------------------------------------------------------------------------------
+
+(3) For Loop
+
+#!/bin/bash
+
+for variablename in variablevalue
+   do
+        echo "$ variablename"
+   done
+
+
+for variablename in aws
+    do
+        echo "$variablename"
+    done
+
+#output 
+aws
+--------------------------------------------------------------------------------------------------------------------------------------
