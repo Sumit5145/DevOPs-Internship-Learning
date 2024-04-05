@@ -1,0 +1,14 @@
+20 -1
+21 -2
+22 -4
+23 -8
+24 -16
+25 -32
+26 -64
+27 -128
+
+
+ifcongig  :- ip chack 
+ping google.com
+hostname :- hostname name chack
+hostname set :- sumit hostname set 
