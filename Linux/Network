@@ -10,9 +10,7 @@
 
 ifcongig  :- ip chack 
 ping google.com
-hostname :- hostname name chack
-<<<<<<< HEAD
-hostname set sumit :- sumit hostname set 
-=======
-hostname set sumit :- sumit hostname set 
->>>>>>> 191ad7b394998502b9c357f391dc8e1ef2098451
+hostname :- hostname show
+hostname set sumit :- linux host name sumit
+
+
