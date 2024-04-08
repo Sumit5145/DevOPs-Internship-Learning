@@ -1,0 +1,28 @@
+# IAM User Create
+
+User Name :- dev
+I want to create an IAM user
+
+Custom password :- Abc@1234
+
+Attach policies directly
+
+AmazonS3FullAccess  # S3 full access but DeleteBucket Deny
+AmazonEC2FullAccess
+
+Create User
+
+Add permissions  
+Specify permissions 
+
+S3
+Write   (Deny)
+
+DeleteBucket      # S3 full access but DeleteBucket Deny
+
+permissions name dev-s3-deny  
+
+
+
+URL
+URl
