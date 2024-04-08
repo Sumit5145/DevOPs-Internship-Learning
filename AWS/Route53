@@ -1,0 +1,18 @@
+# Route53
+
+Hosted zones
+
+Domain name :- sumitdevops.xyz
+Type :- Public hosted zone
+create hosted zones
+
+Create record
+
+Record name :- app
+Record type :-A
+Value :- 
+TTL :- 60 seconds
+Routing policy  :- simple routing
+
+
+app.sumitdevops.xyz
