@@ -1,0 +1,15 @@
+# Simple Notification Service
+
+Name :- sumit
+Display name :- dev
+create sns
+
+Create subscription
+Topic ARN
+Protocol :- email SMS
+Endpoint :- sumitkhandala246@gmail.com        /     8511463594
+create
+
+messages type
+subject devops
+devops inten
