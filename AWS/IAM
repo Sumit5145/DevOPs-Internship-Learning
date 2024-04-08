@@ -23,6 +23,13 @@ DeleteBucket      # S3 full access but DeleteBucket Deny
 permissions name dev-s3-deny  
 
 
+# IAM USER LOGIN  dev user login
+Account ID (12 digits)  :- 154998023090
+User name :- dev
+Password :- Abc@1234   
+
+
+
 
 URL
 URl
