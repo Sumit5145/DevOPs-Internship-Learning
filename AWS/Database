@@ -1,0 +1,15 @@
+# Database
+
+Create database :- Standard create
+Engine options :- MYSQL
+Engine Version :- 8.0.35
+Templates :- Free tier
+DB instance :- Database-1
+Master username :- dev
+Master password :- sumit@devops-123
+Storage type:- General Purpose SSD (GP2)
+Allocated storage:- 20GB
+EC2 instance :- sumit
+Additional VPC security group :- AWS
+
+create database
