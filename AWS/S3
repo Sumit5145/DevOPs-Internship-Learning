@@ -1,0 +1,25 @@
+# S3
+
+Create bucket :- sumit-dev-12
+Object Ownership :- ACLs disabled
+Block Public Access settings for this bucket :- Block all public access
+Bucket Versioning :- Disable
+
+create bucket
+
+Upload File and Folder
+add file
+Upload
+
+# Public Images
+Onen bucket :- sumit-dev-12
+addPermissions 
+Block all public access :- Off
+Object Ownership :- ACLs enabled
+SAVE
+Make public
+
+
+URL 
+
+
