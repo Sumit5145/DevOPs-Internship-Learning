@@ -1,0 +1,9 @@
+# Cloud Trail
+
+Trail name :- dev-qa
+Use existing S3 bucket :- sumit-dev-12  # Trail log 
+Next
+Create Trail
+
+log store by s3 bucket
+sumit-dev-12
