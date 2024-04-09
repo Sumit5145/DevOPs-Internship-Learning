@@ -1,0 +1,11 @@
+# Docker Network
+docker network create --subnet 10.0.0.0/16 --gateway 10.0.0.1 my-network
+docker network ls   # show network 
+docker network inspect my-network   # information show for my-network
+
+
+# containe create for my-network command
+docker run -it -d -p 80 httpd --network my-network
+
+# network delete command
+docker network rm my-network
