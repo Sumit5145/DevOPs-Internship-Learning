@@ -1,2 +1,52 @@
 # New Network Create For VPC
 
+name :- my-VPC
+IPv4 CIDR :- 10.0.0.0/16
+create VPC
+
+URL :- 
+
+# Create  3 Subnets
+
+VPC ID :- vpc-09087ee8f7edc86cb8 (my-vpc)
+Subnet name :- public
+IPv4 subnet CIDR block :- 10.0.1.0/24
+create
+
+VPC ID :- vpc-09087ee8f7edc86cb8 (my-vpc)
+Subnet name :- Private Without Internet
+IPv4 subnet CIDR block :- 10.0.2.0/24
+create
+
+
+VPC ID :- vpc-09087ee8f7edc86cb8 (my-vpc)
+Subnet name :- Private With Internet
+IPv4 subnet CIDR block :- 10.0.3.0/24
+create
+
+URL :- 
+
+# Create 3 Route Table
+name :- public
+vpc :- vpc-09087ee8f7edc86cb8 (my-vpc)
+
+name :- Private-Without-Internet
+vpc :- vpc-09087ee8f7edc86cb8 (my-vpc)
+
+name :- Private-With-Internet
+vpc :- vpc-09087ee8f7edc86cb8 (my-vpc)
+
+
+Associate Subnet with route table. For example public subnet with public route table and likewise others
+
+URL :- 
+
+# Create internet gateway
+name :- my-internet-geteway
+and attach with my-vpc
+
+In public route table add route to internet gateway and likewise others .
+Destination      Target
+0.0.0.0/0        Internet Gateway
+
+URL :- 
