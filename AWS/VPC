@@ -5,7 +5,7 @@ IPv4 CIDR :- 10.0.0.0/16
 create VPC
 
 URL :- 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 # Create  3 Subnets
 
 VPC ID :- vpc-09087ee8f7edc86cb8 (my-vpc)
@@ -25,7 +25,7 @@ IPv4 subnet CIDR block :- 10.0.3.0/24
 create
 
 URL :- 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 # Create 3 Route Table
 name :- public
 vpc :- vpc-09087ee8f7edc86cb8 (my-vpc)
@@ -40,7 +40,7 @@ vpc :- vpc-09087ee8f7edc86cb8 (my-vpc)
 Associate Subnet with route table. For example public subnet with public route table and likewise others
 
 URL :- 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 # Create internet gateway
 name :- my-internet-geteway
 and attach with my-vpc
@@ -50,3 +50,4 @@ Destination      Target
 0.0.0.0/0        Internet Gateway
 
 URL :- 
+----------------------------------------------------------------------------------------------------------------------------------------
