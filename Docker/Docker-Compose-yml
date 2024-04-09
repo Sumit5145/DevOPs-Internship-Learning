@@ -1,0 +1,20 @@
+# Docker Compose yml
+
+touch docker-compose.yaml
+
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: always
+
+    
+
+# command 
+docker compose up -d   # images build
+docker compose down # docker compose remove
