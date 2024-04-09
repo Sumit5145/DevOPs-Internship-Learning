@@ -1,0 +1,46 @@
+# Docker Install Command   Ubuntu Instance
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+usermod -aG docker ubuntu
+
+docker - -version
+
+
+# Command
+docker run centos   # create container and stop container
+docker run -it ubuntu # create container and running mode
+docker ps # show is list of running container
+docker ps -a # showes running & stop container
+
+docker Images  # check image list
+docker ps -a --no-trunc # check imager full id
+crlt P Q # container logout and exit
+docker start container id # container running mode
+docker exec -it 998 bash  # container login
+docker inspect conid | less  # to check container ip & details
+
+# containe and images delete command
+docker rm container id  # container delete
+docker rm -f `docker ps -a -q`  # all container remove 
+docker rmi images id # images remove
+
+# Container name set
+docker run --name sumit --it ubuntu  # Container name set
+
+# port number
+-p 80 # container port 80 
+-d   # dettach
+
+# Backup Images
+docker save # command to take backup of image locally
+docker save --output imagesname.tag.tar backupname 
+
+docker load # command to the restore the image
+docker load --input imagesname        
+
+# docker volume
+docker volume create mydata
+docker volume ls  # show volume mydata
+
+
