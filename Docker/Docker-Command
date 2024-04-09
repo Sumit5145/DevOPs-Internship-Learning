@@ -55,4 +55,8 @@ WARNING! This will remove:
 Are you sure you want to continue? [y/N] y
 
 
+# Running container remove command
+docker kill container id/container name
+
+
 
