@@ -1,0 +1,31 @@
+# Pod Create and Command
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginxtest2
+  labels:
+    environment: dev
+    type: frontent
+spec:
+  containers:
+  - name: nginxtest2
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+
+
+
+
+
+# Command
+k apply -f 
+apt-get install elinks
+k get pod    # pod show
+k get pods -o wide   # all info node and pod
+k describe pod nginxtest2   # pod info show
+k get pods --show-labels    # environment and type show
+k delete pod nginxtest2  # pod delete
+k delete pod --all
+
+
+

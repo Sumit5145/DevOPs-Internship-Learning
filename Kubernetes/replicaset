@@ -1,0 +1,30 @@
+kind: ReplicaSet
+metadata:
+  name: nginx-frontend
+  labels:
+    type: frontend
+    enc: dev
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      type: frontend
+      env: dev
+  template:
+    metadata:
+      labels:
+        type: frontend
+        env: dev
+    spec:
+      containers:
+      - name: nginx1
+        image: nginx
+
+
+
+# Command
+k get replicasets.apps  # replika show
+k get rs        # replika show
+k delete replicasets.apps nginx-frontend  # repliks delete # {nginx-frontend replikaset name}
+
