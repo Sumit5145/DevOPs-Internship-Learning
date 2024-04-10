@@ -10,3 +10,98 @@ ssh-keygen -t rsa -f ~/.ssh/Kubernetes -C sumit -b 2048
 
 
 
+cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+br_netfilter
+EOF
+
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+sudo sysctl --system
+
+
+
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl
+sudo apt install docker.io -y
+
+sudo systemctl enable docker
+
+mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.27/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+
+
+echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.27/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl
+sudo apt-mark hold kubelet kubeadm kubectl
+
+
+cat > /etc/docker/daemon.json <<EOF
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+EOF
+
+systemctl restart docker
+
+
+
+# Creating a cluster with kubeadm  (Run Command on Master Node Only)
+
+
+# Initializing your control-plane node
+
+
+kubeadm init
+
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+
+kubectl get node     # wait for few minute till it shows list of node 
+
+
+
+weave network
+
+https://www.weave.works/docs/net/latest/kubernetes/kube-addon/
+
+
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+
+
+
+
+# Now on worker node
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 10.182.0.26:6443 --token 572k1q.iqqwr0a0gbwkwtdd \
+        --discovery-token-ca-cert-hash sha256:a1d811ecb4e0b0fd2a9c3da38b6078d3e7317531743144bbdae363f1e7db063b
+
+
+
+
+
+# Kubernetes Auto Completion
+
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+
+echo 'alias k=kubectl' >>~/.bashrc
+echo 'complete -F __start_kubectl k' >>~/.bashrc
+
+source .bashrc
+
+
+
+URL :- 
