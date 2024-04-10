@@ -1,0 +1,37 @@
+# Pod Commmand
+
+k apply -f 
+apt-get install elinks
+k get pod    # pod show
+k get pods -o wide   # all info node and pod
+k describe pod nginxtest2   # pod info show
+k get pods --show-labels    # environment and type show
+k delete pod nginxtest2  # pod delete
+k delete pod --all
+
+
+# ReplicaSet Command
+
+k apply -f replikaset.yaml 
+k get replicasets.apps  # replika show
+k get rs        # replika show
+k delete replicasets.apps nginx-frontend  # repliks delete # {nginx-frontend replikaset name}
+
+# Service Command
+
+k apply -f service.yaml 
+k get service  # service show
+k get endpoints  #  list of network endpoints, typically referenced by a Service to define which Pods the traffic can be sent to
+k delete service nginx-frontend  # delete services # nginx-frontend services name
+
+# Deployment Command
+
+k apply -f deployment.yaml
+k get deployments.apps
+k delete deployments nginx-deployment
+
+kubectl rollout status deployment/nginx-deployment
+kubectl annotate deployment/nginx-deployment kubernetes.io/change-cause="image update to version latest from 1.14.2"
+kubectl rollout history deployment/nginx-deployment
+kubectl rollout undo deployment/nginx-deployment --to-revision=2
+
