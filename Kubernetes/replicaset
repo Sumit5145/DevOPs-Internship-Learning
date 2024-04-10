@@ -24,6 +24,7 @@ spec:
 
 
 # Command
+k apply -f replikaset.yaml 
 k get replicasets.apps  # replika show
 k get rs        # replika show
 k delete replicasets.apps nginx-frontend  # repliks delete # {nginx-frontend replikaset name}
