@@ -12,7 +12,7 @@ All traffic      all                   Custom 0.0.0.0/0
 
 SAVE
 
-URL :- 
+URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Security+Groups.png
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Create key pair
@@ -22,7 +22,7 @@ Key pair type :- RSA
 Private key file format :- Pem
 Create key pair
 
-URL :- 
+URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Key+pair.png
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Volume 
@@ -31,7 +31,7 @@ Volume type :- GP3 SSD
 Size (GiB) :- 10
 Create Volume
 
-URL :- 
+URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Volume.png
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Load balancer
@@ -51,7 +51,7 @@ Health checks :- Response timeout 5 seconds
                  Healthy threshold 5
 Create load balancer
 
-URL :- 
+URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/my-lb.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Launch an instance
@@ -64,7 +64,7 @@ Select existing security group :- devops
 Configure storage :- 8 GB GP2
 create
 
-URL :- 
+URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Launch+an+instance.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Auto Scaling group
