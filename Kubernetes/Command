@@ -36,9 +36,38 @@ kubectl rollout history deployment/nginx-deployment
 kubectl rollout undo deployment/nginx-deployment --to-revision=2
 
 
-
 # namespace
+
+k get namespace   # namespace show
+k run nginx --images nginx --namespace dev  # nginx pod create to dev namespace
+k get pod --namespace dev 
+k delete pod nginx --namespace dev  # dev namespace nginx pod delete
+k delete namespace namespace name  # delete namespace
+k apply -f --namespace dev    # new yaml file apply for dev namespace
+k get service --namespace dev  # dev namespace service show
+k create namespace qa  # qa namespace create for in command
+
+
 # taints-and-tolerations
+
+k taint node kub-node-1 hardware=highspace:NoSchedule
+k describe pod nginx
+k edit nodes kub-node-1
+
+
 # secret
-# update version
+
+k get secret db-secret -o yaml
+echo -n "yamlfile password" | base64 --decode
+echo -n "yamlfile user name password" | base64 --decode
+
+echo -n "secret password" | base64
+echo -n "secret username" | base64
+
+
+k get secret secret name
+
+
+
+
 
