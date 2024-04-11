@@ -1,0 +1,21 @@
+# Namespace
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev
+
+
+# Command
+  k get namespace   # namespace show
+  k run nginx --images nginx --namespace dev  # nginx pod create to dev namespace
+  k get pod --namespace dev 
+  k delete pod nginx --namespace dev  # dev namespace nginx pod delete
+  k delete namespace namespace name  # delete namespace
+
+  k apply -f --namespace dev    # new yaml file apply for dev namespace
+  k get service --namespace dev  # dev namespace service show
+
+
+# command line to create namespace
+k create namespace qa  # qa namespace create for in command

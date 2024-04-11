@@ -1,0 +1,25 @@
+# Taints and Tolerations
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+  tolerations:
+  - key: "hardware"
+    value: "highspace"
+    effect: "NoSchedule"
+
+
+# Taints and Tolerations Command
+
+k taint node kub-node-1 hardware=highspace:NoSchedule
+k describe pod nginx
+k edit nodes kub-node-1
+

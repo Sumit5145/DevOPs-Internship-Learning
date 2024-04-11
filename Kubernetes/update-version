@@ -1,0 +1,17 @@
+# upgrade command    (Master nodes)
+
+
+kubeadm upgrade plan
+kubeadm version
+apt update
+apt-cache madison kubeadm
+apt-mark unhold kubeadm
+kubeadm upgrade apply 1.27.11-1.1
+apt-mark hold kubeadm
+sudo kubeadm upgrade apply 1.27.11-1.1
+apt-mark unhold kubelet kubectl
+apt-get update && apt-get install -y kubelet='1.27.11-1.1' kubectl='1.27.11-1.1'
+apt-mark hold kubelet kubectl
+sudo systemctl daemon-reload
+sudo systemctl restart kubelet
+kubectl uncordon kubernets-master

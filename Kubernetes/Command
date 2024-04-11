@@ -35,3 +35,10 @@ kubectl annotate deployment/nginx-deployment kubernetes.io/change-cause="image u
 kubectl rollout history deployment/nginx-deployment
 kubectl rollout undo deployment/nginx-deployment --to-revision=2
 
+
+
+# namespace
+# taints-and-tolerations
+# secret
+# update version
+
