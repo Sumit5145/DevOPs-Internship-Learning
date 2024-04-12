@@ -1,0 +1,53 @@
+# Jenkins Install in Java
+# Install Jenkins on Ubuntu
+
+sudo apt-get update
+sudo apt install openjdk-17-jdk -y
+
+# Add Jenkins Repo
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]  https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+
+# Install Jenkins
+sudo apt-get update
+sudo apt install jenkins -y
+
+# Starting Jenkins
+sudo systemctl start jenkins.service
+sudo systemctl status jenkins
+
+
+# Jenkins Start
+http://34.16.218.112:8080
+
+
+# Maven Install
+
+# Downlods code for git
+https://github.com/Sumit5145/jenkins2-maven.git
+
+--Install Git on server
+--Install Git  Plugin     # maven
+--Configure as a Tools in Jenkins
+
+# Download Apache Maven 
+
+# login ssh Command
+sudo su -
+cd /
+mkdir opt
+cd opt
+wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz   # Download Apache Maven 
+
+# Maven home
+root/opt/maven
+
+# Java home
+usr/lib/jvm/java-17-openjdk-amd64
+
+# maven lifecycle
+mvn clean package 
+
+
