@@ -1,6 +1,6 @@
 # Security Groups
 
-Security group name :- devops
+Security group name :- sumit
 Inbound rules 
 Type       Port range              Source
 SSH           22                Anywhere 0.0.0.0/0
@@ -56,13 +56,13 @@ URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/my-lb.mkv
 
 # Launch an instance
 
-Name :- dev
-Application and OS Images :- ubuntu
-Instance type :- t2 micro
-Key pair :- sumit
-Select existing security group :- devops
-Configure storage :- 8 GB GP2
-create
+Name :- dev                                           Name :- qa                 
+Application and OS Images :- ubuntu                   Application and OS Images :- ubuntu                   
+Instance type :- t2 micro                             Instance type :- t2 micro
+Key pair :- sumit                                     Key pair :- sumit
+Select existing security group :- sumit               Select existing security group :- sumit
+Configure storage :- 8 GB GP2                         Configure storage :- 8 GB GP2
+create                                                create
 
 URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Launch+an+instance.mkv
 -------------------------------------------------------------------------------------------------------------------------------------

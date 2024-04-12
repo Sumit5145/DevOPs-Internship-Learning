@@ -1,0 +1,27 @@
+# Build periodically
+
+Job name :- cron-Job
+Source Code Management  # Git # Repositories
+Repository URL :- https://github.com/Sumit5145/jenkins2-maven.git
+Branch Specifier :- main
+Build Triggers :- Build periodically 
+Schedule :- */1 * * * *
+
+# SAVE  APPLY   PER MINUTE BUILD START
+
+
+# Poll SCM
+
+Job name :- cron-Job
+Source Code Management  # Git # Repositories
+Repository URL :- https://github.com/Sumit5145/jenkins2-maven.git
+Branch Specifier :- main
+Build Triggers :- Poll SCM
+Schedule :- */1 * * * *
+
+
+# SAVE APPLY    poll every minute, changes and trigger a build now
+
+
+
+

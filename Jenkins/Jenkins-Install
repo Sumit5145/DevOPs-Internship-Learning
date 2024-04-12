@@ -28,9 +28,9 @@ http://34.16.218.112:8080
 # Downlods code for git
 https://github.com/Sumit5145/jenkins2-maven.git
 
---Install Git on server
---Install Git  Plugin     # maven
---Configure as a Tools in Jenkins
+Install Git on server
+Install Git  Plugin     # maven
+Configure as a Tools in Jenkins
 
 # Download Apache Maven 
 
