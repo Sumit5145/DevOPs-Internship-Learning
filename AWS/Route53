@@ -16,3 +16,12 @@ Routing policy  :- simple routing
 
 
 app.sumitdevops.xyz
+
+
+
+
+#!/bin/bash
+yum install httpd -y
+echo "Welcome to Devops" > /var/www/html/index.html
+service httpd start 
+chkconfig httpd on
