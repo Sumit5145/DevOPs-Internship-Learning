@@ -23,3 +23,8 @@ k taint node kub-node-1 hardware=highspace:NoSchedule
 k describe pod nginx
 k edit nodes kub-node-1
 
+
+
+
+
+

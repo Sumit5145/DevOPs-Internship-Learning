@@ -30,5 +30,3 @@ roleRef:
 # command
 k get clusterrole secret-reader
 
-
-
