@@ -9,6 +9,9 @@ Schedule :- */1 * * * *
 
 # SAVE  APPLY   PER MINUTE BUILD START
 
+URL :- 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # Poll SCM
 
@@ -21,6 +24,26 @@ Schedule :- */1 * * * *
 
 
 # SAVE APPLY    poll every minute, changes and trigger a build now
+
+URL :- 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# GitHub hook trigger for GITScm polling
+
+Job NAme :- auto-build
+Source Code Management  # Git # Repositories
+Repository URL :- https://github.com/Sumit5145/jenkins2-maven.git
+Branch Specifier :- main
+Build Triggers :- GitHub hook trigger for GITScm polling
+
+# SAVE APPLY    GITHUB CODE PUSH AND BUILD START
+
+URL :- 
+
+
+
+
 
 
 

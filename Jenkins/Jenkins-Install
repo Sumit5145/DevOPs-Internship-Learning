@@ -41,6 +41,11 @@ mkdir opt
 cd opt
 wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz   # Download Apache Maven 
 
+tar -xzvf apache-maven-3.9.6-bin.tar.gz
+cd maven
+cd bin
+./mvn -version # home check command
+
 # Maven home
 root/opt/maven
 
