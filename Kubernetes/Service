@@ -18,3 +18,4 @@ k apply -f service.yaml
 k get service  # service show
 k get endpoints  #  list of network endpoints, typically referenced by a Service to define which Pods the traffic can be sent to
 k delete service nginx-frontend  # delete services # nginx-frontend services name
+
