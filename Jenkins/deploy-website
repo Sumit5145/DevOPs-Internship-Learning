@@ -1,0 +1,41 @@
+# Deploy-Website
+
+-------------------
+# Install Plugins
+Deploy to container
+Build Pipeline
+Copy Aritifact
+---------------------
+
+
+Job Name :-deploy-Website
+Source Code Management :- Git 
+Repository URL :- https://github.com/Sumit5145/jenkins2-maven.git
+Branch Specifier :- main
+Build Triggers :- GitHub hook trigger for GITScm polling
+Build :- # Root POM :- pom.xml   # Goals and options :- clean package
+Post-build Actions :- Archive the artifacts # Files to archive :- **/*.war
+Post-build Actions :- Deploy war/ear to a container  # WAR/EAR files :- **/*.war
+Containers :- Tomcat 9 # Credentials :- jenkins  # tomcat url :- http://34.86.20.224:8090/
+
+
+
+
+# Copy artifacts from another project
+
+Job Name :-deploy-Website
+Source Code Management :- Git 
+Repository URL :- https://github.com/Sumit5145/jenkins2-maven.git
+Branch Specifier :- main
+Build Triggers :- GitHub hook trigger for GITScm polling
+Build :- # Root POM :- pom.xml   # Goals and options :- clean package
+Post-build Actions :- Archive the artifacts # Files to archive :- **/*.war
+Post-build Actions :- Build other projects 
+projects name :- deploy-other-project
+
+
+Job Name :- deploy-other-project
+Add Build Step :- Copy artifacts from another project
+project name :- deploy-Website
+Post-build Actions :- Deploy war/ear to a container  # WAR/EAR files :- **/*.war
+Containers :- Tomcat 9 # Credentials :- jenkins  # tomcat url :- http://34.86.20.224:8090/
