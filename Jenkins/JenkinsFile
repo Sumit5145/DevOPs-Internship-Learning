@@ -1,9 +1,14 @@
-# Jenkins Pipeline
-
-Job Name :- Jenkins pipeline
+# Jenkins File
+Job name :- Jenkins File
 pipeline
 Build Triggers :- GitHub hook trigger for GITScm polling
-Definition :- Pipeline script
+Definition :- pipeline script from SCM
+SCM :- Git
+Repository URL :- https://github.com/Sumit5145/jenkins2-maven.git
+Branch Specifier :- main
+Script Path :- Jenkinsfile 
+
+ 
 
 
 
@@ -37,14 +42,3 @@ pipeline {
         }
     }
 }
-
-
-
-# Git Code Downlods
-# Build mvn clean package
-# Test case Report
-# Archive the artifacts
-# Deploy
-
-
-
