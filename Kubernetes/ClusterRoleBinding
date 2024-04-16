@@ -30,3 +30,5 @@ roleRef:
 # command
 k get clusterrole secret-reader
 
+URL :- https://devops-kubernetes-destop.s3.ap-south-1.amazonaws.com/ClusterRole.mkv
+

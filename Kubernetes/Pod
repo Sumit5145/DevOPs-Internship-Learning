@@ -28,4 +28,6 @@ k delete pod nginxtest2  # pod delete
 k delete pod --all
 
 
+URL :- https://devops-kubernetes-destop.s3.ap-south-1.amazonaws.com/pod.mkv
+
 

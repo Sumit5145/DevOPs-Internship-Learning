@@ -13,6 +13,7 @@ All traffic      all                   Custom 0.0.0.0/0
 SAVE
 
 URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Security+Groups.png
+URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/Security+Groups.mkv     
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Create key pair
@@ -23,6 +24,7 @@ Private key file format :- Pem
 Create key pair
 
 URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Key+pair.png
+URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/Create+key+pair.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Volume 
@@ -32,6 +34,7 @@ Size (GiB) :- 10
 Create Volume
 
 URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Volume.png
+URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/Volumes.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Load balancer
@@ -52,6 +55,7 @@ Health checks :- Response timeout 5 seconds
 Create load balancer
 
 URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/my-lb.mkv
+URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/Load+balancer.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Launch an instance
@@ -65,6 +69,7 @@ Configure storage :- 8 GB GP2                         Configure storage :- 8 GB 
 create                                                create
 
 URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Launch+an+instance.mkv
+URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/instance.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Auto Scaling group
@@ -111,7 +116,7 @@ autoscaling group--automatic scaling--create dynamic scaling policy
 
 select simple scaling
 
-URL :-
+URL :-https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/Load+balancer.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
  

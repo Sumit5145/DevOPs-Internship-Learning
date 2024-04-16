@@ -22,6 +22,10 @@ app.sumitdevops.xyz
 
 #!/bin/bash
 yum install httpd -y
-echo "Welcome to Devops" > /var/www/html/index.html
+echo "Jenkins CI/CD Deploy Wen Server" > /var/www/html/index.html
 service httpd start 
 chkconfig httpd on
+
+URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/route+53.mkv
+
+

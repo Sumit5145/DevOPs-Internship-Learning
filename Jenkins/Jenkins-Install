@@ -56,3 +56,6 @@ usr/lib/jvm/java-17-openjdk-amd64
 mvn clean package 
 
 
+
+URL :- https://devops-jenkins-cicd.s3.ap-south-1.amazonaws.com/GitHub+hook+trigger.mkv
+

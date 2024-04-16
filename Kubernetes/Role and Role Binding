@@ -32,3 +32,5 @@ roleRef:
 
 # command
 k get role
+
+URL :- https://devops-kubernetes-destop.s3.ap-south-1.amazonaws.com/role.mkv

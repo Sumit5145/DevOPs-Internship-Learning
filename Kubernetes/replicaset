@@ -30,3 +30,6 @@ k get replicasets.apps  # replika show
 k get rs        # replika show
 k delete replicasets.apps nginx-frontend  # repliks delete # {nginx-frontend replikaset name}
 
+
+URL :- https://devops-kubernetes-destop.s3.ap-south-1.amazonaws.com/replika.mkv
+
