@@ -24,7 +24,6 @@ k describe pod nginx
 k edit nodes kub-node-1
 
 
-URL :- https://devops-kubernetes-destop.s3.ap-south-1.amazonaws.com/taints.mkv
 
 
 

@@ -26,5 +26,4 @@ URL :- https://devops-docker-file.s3.ap-south-1.amazonaws.com/Dockerfile.mkv
 
 # DOCKER INSTALL
 
-URL :- https://devops-docker-file.s3.ap-south-1.amazonaws.com/docker+install.mkv
 

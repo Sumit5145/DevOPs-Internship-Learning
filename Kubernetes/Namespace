@@ -21,4 +21,3 @@ metadata:
 k create namespace qa  # qa namespace create for in command
 
 
-URL :- https://devops-kubernetes-destop.s3.ap-south-1.amazonaws.com/namespace.mkv

@@ -20,4 +20,3 @@ docker compose up -d   # images build
 docker compose down # docker compose remove
 
 
-URL :- https://devops-docker-file.s3.ap-south-1.amazonaws.com/compose+and+push.mkv

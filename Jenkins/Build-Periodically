@@ -9,7 +9,6 @@ Schedule :- */1 * * * *
 
 # SAVE  APPLY   PER MINUTE BUILD START
 
-URL :- https://devops-jenkins-cicd.s3.ap-south-1.amazonaws.com/Build+periodically.mkv
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -25,7 +24,6 @@ Schedule :- */1 * * * *
 
 # SAVE APPLY    poll every minute, changes and trigger a build now
 
-URL :- https://devops-jenkins-cicd.s3.ap-south-1.amazonaws.com/poll+scm.mkv
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -39,7 +37,6 @@ Build Triggers :- GitHub hook trigger for GITScm polling
 
 # SAVE APPLY    GITHUB CODE PUSH AND BUILD START
 
-URL :- https://devops-jenkins-cicd.s3.ap-south-1.amazonaws.com/GitHub+hook+trigger.mkv
 
 
 

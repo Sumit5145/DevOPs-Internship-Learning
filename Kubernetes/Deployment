@@ -33,7 +33,6 @@ kubectl rollout history deployment/nginx-deployment
 kubectl rollout undo deployment/nginx-deployment --to-revision=2
 
 
-URL :- https://devops-kubernetes-destop.s3.ap-south-1.amazonaws.com/deployment.mkv
 
 
 

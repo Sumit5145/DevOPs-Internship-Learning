@@ -46,5 +46,4 @@ In public route table add route to internet gateway and likewise others .
 Destination      Target
 0.0.0.0/0        Internet Gateway
 
-URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/vpc.mkv
 ----------------------------------------------------------------------------------------------------------------------------------------

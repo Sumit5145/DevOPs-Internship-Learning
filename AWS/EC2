@@ -54,8 +54,7 @@ Health checks :- Response timeout 5 seconds
                  Healthy threshold 5
 Create load balancer
 
-URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/my-lb.mkv
-URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/Load+balancer.mkv
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Launch an instance
@@ -68,8 +67,7 @@ Select existing security group :- sumit               Select existing security g
 Configure storage :- 8 GB GP2                         Configure storage :- 8 GB GP2
 create                                                create
 
-URL :- https://devops-inten.s3.ap-south-1.amazonaws.com/Launch+an+instance.mkv
-URL :- https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/instance.mkv
+
 -------------------------------------------------------------------------------------------------------------------------------------
 
 # Auto Scaling group
@@ -116,7 +114,6 @@ autoscaling group--automatic scaling--create dynamic scaling policy
 
 select simple scaling
 
-URL :-https://devops-aws-all-services.s3.ap-south-1.amazonaws.com/Load+balancer.mkv
 -------------------------------------------------------------------------------------------------------------------------------------
 
  
