@@ -184,10 +184,11 @@ w :- show ssh user
 jobs :- running process in the background
 fg%1 :- 1 job id kill process
 
+top :- Linux processes
 
 
 # Disk Partitioning in Linux Command
-
+ 
 lsblk     :- show disk
 fdisk -i  :- show disk
 
