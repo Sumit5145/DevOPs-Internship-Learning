@@ -52,7 +52,7 @@ read       can read content of file     list the files and directories
 r
 write       edit the file                create/delete files
 w
-execute                                  cd 
+execute       the right                           cd 
 x
 
 Parmission Number
